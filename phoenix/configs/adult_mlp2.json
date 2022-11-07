@@ -1,0 +1,38 @@
+{
+    // Meta params
+    "VERBOSE":      true,
+    "seed":         1,
+    "out_path":     "out/adult_mlp2.txt",
+    
+    // Dataset params
+    "dataset":      "adult",
+    "data_path":    "data/adult_test_15060.csv",
+    "nb_examples":  15060,
+    "input_size":   32,
+    "nb_logits":    2,
+
+    // Network params
+    "weights_path": "weights/adult_mlp2.csv",
+    "layers":       [32, 1],
+
+    // Smoothing params
+    "example_idx":  -1, // give on the command line
+    "sigmas":        [0.5524182319641113, 0.1722080409526825, 0.7099511027336121, 0.12170911580324173, 0.22365544736385345, 1.2200579643249512],
+    "Ns0":          1024, 
+    "Ns":           1024,
+    "tau":          0.719,
+    "alpha":        0.001,
+
+    // Argmax params
+    "L":            -180,
+    "R":            180,
+    "D":            0.0072,
+    "dg1":          6,
+    "df1":          0,
+    "dg2":          0,
+    "df2":          2,
+
+    // CKKS params 
+    "log_N":         17,
+    "log_delta":     50
+}

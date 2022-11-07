@@ -1,0 +1,38 @@
+{
+    // Meta params
+    "VERBOSE":      true,
+    "seed":         1,
+    "out_path":     "out/mnist_mlp2_uniform_for_L1.txt",
+    
+    // Dataset params
+    "dataset":      "mnist",
+    "data_path":    "data/mnist_test_10k.csv",
+    "nb_examples":  10000,
+    "input_size":   1024, // padded from 28*28
+    "nb_logits":    10,
+
+    // Network params
+    "weights_path": "weights/mnist_mlp2_uniform_2.0.csv",
+    "layers":       [32, 16],
+
+    // Smoothing params
+    "example_idx":  -1, // give on command line
+    "sigma":        -2, // negative sigmas = uniform noise
+    "Ns0":          32, 
+    "Ns":           128,
+    "tau":          0.635, // account for 1% of error, gets R=0.5
+    "alpha":        0.001,
+
+    // Argmax params
+    "L":            -35,
+    "R":            50,
+    "D":            0.0034,
+    "dg1":          6,
+    "df1":          1,
+    "dg2":          2,
+    "df2":          2,
+
+    // CKKS params 
+    "log_N":         17,
+    "log_delta":     50
+}

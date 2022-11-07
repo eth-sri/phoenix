@@ -1,0 +1,1 @@
+Linear algebra utils adapted from https://github.com/MarbleHE/SoK/

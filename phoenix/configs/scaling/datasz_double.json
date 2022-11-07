@@ -1,0 +1,38 @@
+{
+    // Meta params
+    "VERBOSE":      true,
+    "seed":         1,
+    "out_path":     "out/scaling_datasz_double.txt",
+    
+    // Dataset params
+    "dataset":      "mnist",
+    "data_path":    "data/mnist_test_10k.csv",
+    "nb_examples":  10000,
+    "input_size":   -2048, // neg. input_size = random inputs
+    "nb_logits":    10,
+
+    // Network params
+    "weights_path": "weights/mnist_mlp2_0.5.csv",
+    "layers":       [32, 16],
+
+    // Smoothing params
+    "example_idx":  -1, // give on command line
+    "sigma":        0.5,
+    "Ns0":          16, 
+    "Ns":           128,
+    "tau":          0.76, // account for 1% of error
+    "alpha":        0.001,
+
+    // Argmax params
+    "L":            -80,
+    "R":            60,
+    "D":            0.0056,
+    "dg1":          6,
+    "df1":          1,
+    "dg2":          2,
+    "df2":          2,
+
+    // CKKS params 
+    "log_N":         17,
+    "log_delta":     50
+}
