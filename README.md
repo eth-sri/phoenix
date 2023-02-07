@@ -6,6 +6,8 @@ Phoenix is a system for privacy-preserving neural network inference with reliabi
 
 [jovanovic2022phoenix]: https://www.sri.inf.ethz.ch/publications/jovanovic2022phoenix
 
+For a brief overview, check out our **[blogpost](https://www.sri.inf.ethz.ch/blog/phoenix)**.
+
 ### Installation
 
 First, set up a conda environment with pytorch, needed to run the python code that prepares the data and models used by Phoenix:
