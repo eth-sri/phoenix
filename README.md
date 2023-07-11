@@ -60,12 +60,12 @@ mkdir out
 
 ### Running Phoenix
 
-It is necessary to first prepare the corresponding dataset and trained models to use for reliable inference. The python code for this is given in `phoenix/_torch`. For example, to generate data for the MNIST dataset, run the following:
+It is necessary to first prepare the corresponding dataset and trained models to use for reliable inference. The python code for this is given in `phoenix/_torch`. For example, to generate data for the MNIST dataset, run the following from the project root:
 
 ```
 cd phoenix 
-mkdir ../data
-cd phoenix/_torch
+mkdir data
+cd _torch
 python3 train.py save_data mnist
 ```
 
